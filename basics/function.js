@@ -29,12 +29,13 @@
 
 //call, apply, bind
 
-function hello() {
-    //this 
-    console.log(this.name + this.val) 
-}
+// function hello() {
+//     //this 
+//     console.log(this.name + this.val) 
+// }
 
-let obj = {name: "js", val:"20"}
+// let obj = {name: "js", val:"20"}
 
-hello.call(obj) 
+// hello.call(obj) 
 
+//57.46
