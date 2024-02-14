@@ -8,5 +8,9 @@ function addTask() {
     let li = document.createElement("li"); //li etiketini olusturdum ve bu elementi bir li değişkenine atadım 
     li.innerHTML = inputBox.value; //oluşturduğum li elementinin içerği inputboxın değeri ile doldurdum. inputboxın değerli kullanıcının girdiği değer oluyor.
     listContainer.appendChild(li);  //oluşturduğum li elementini listContainer elementine ekledim
+    let span = document.createElement("span"); //span etiketini oluşturdum ve bu elementi bir span değişkenine atadım
+    span.innerHTML = "\u00d7"; //oluşturduğum span elementinin içeriğini x olarak doldurdum
+    li.appendChild(span); //oluşturduğum span elementini li elementine ekledim
   }
+  inputBox.value = ""; //inputboxın değerini boşalttım
 }
