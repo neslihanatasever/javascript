@@ -14,6 +14,7 @@ function addTask() {
     li.appendChild(span); //oluşturduğum span elementini li elementine ekledim
   }
   inputBox.value = ""; //inputboxın değerini boşalttım
+  saveData();
 }
 listContainer.addEventListener(
   "click",
@@ -22,10 +23,22 @@ listContainer.addEventListener(
     if (e.target.tagName === "LI") {
       //eğer tıklanan elementin etiketi li ise
       e.target.classList.toggle("checked");
+      saveData(); //veriyi kaydettim
     } else if (e.target.tagName === "SPAN") {
       //eğer tıklanan elementin etiketi span ise
       e.target.parentElement.remove(); //tıklanan elementin parent elementini yani li elementini sildim
+        saveData(); //veriyi kaydettim
     }
   },
   false
 );
+
+function saveData(){
+    localStorage.setItem("data, listContainer.innerHTML") //listContainer elementinin içeriğini local storage a kaydettim
+}
+
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data"); //listContainer elementinin içeriğini local storage dan aldım
+}
+
+showTask(); //showTask fonksiyonunu çağırdım
