@@ -5,7 +5,7 @@
 ⭐ **End Date** : **10/03/2024**
 
 - [x] Weather App 
-- [ ] Todo List App
+- [x] Todo List App
 - [ ] Quiz App
 - [ ] Generate a Random Password
 - [ ] Notes App
