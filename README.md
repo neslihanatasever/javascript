@@ -6,7 +6,6 @@
 
 - [x] Weather App 
 - [x] Todo List App
-- [ ] Quiz App
 - [ ] Generate a Random Password
 - [ ] Notes App
 - [ ] Age Calculator
