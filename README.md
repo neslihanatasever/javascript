@@ -18,4 +18,3 @@
 - [ ] Popup
 - [ ] Hide Password
 - [ ] Dark Mode
- 
